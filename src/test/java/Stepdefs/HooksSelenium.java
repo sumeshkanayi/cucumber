@@ -52,8 +52,7 @@ public class HooksSelenium {
         if (!initialized) {
             System.out.println("Called openBrowser");
             System.setProperty("org.apache.commons.logging.Log", "org.apache.commons.logging.impl.Jdk14Logger");
-            //System.setProperty("webdriver.firefox.marionette","D:\\WORKSPACE7\\cucumberJava\\browsers\\geckodriver.exe");
-            System.setProperty("webdriver.gecko.driver", "C://Users//elquiff//IdeaProjects//cucumber//browsers//geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", "C://geckodriver.exe");
             driver = new FirefoxDriver();
             driver.manage().deleteAllCookies();
             driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);

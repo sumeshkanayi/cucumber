@@ -17,7 +17,7 @@ public class facebook {
 
     @Given("^I have opened the browser$")
     public void openBrowser() {
-        //System.setProperty("webdriver.gecko.driver", "C://Users//elquiff//IdeaProjects//cucumber//browsers//geckodriver.exe");
+        //System.setProperty("webdriver.gecko.driver", "C://geckodriver.exe");
         //driver = new FirefoxDriver();
         driver.navigate().to("https://www.google.com/");
     }
